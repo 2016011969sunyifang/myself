@@ -17,16 +17,21 @@ export default new Router({
                     component: () => import('./pages/index.vue'),
                 },
                 {
-                    path: '/product/:id',
+                    path: 'product/:id',
                     name: 'product',
                     component: () => import('./pages/product.vue')
                 },
                 {
-                    path: '/detail/:id',
+                    path: 'detail/:id',
                     name: 'detail',
                     component: () => import('./pages/detail.vue')
                 }
             ]
+        },
+        {
+            path: '/text',
+            name: 'text',
+            component: () => import('./pages/text.vue')
         }
     ]
 })
