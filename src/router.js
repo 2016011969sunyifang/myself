@@ -29,9 +29,19 @@ export default new Router({
             ]
         },
         {
+            path: '/login',
+            name: 'login',
+            component: () => import('./pages/login.vue')
+        },
+        {
             path: '/text',
             name: 'text',
             component: () => import('./pages/text.vue')
+        },
+        {
+            path: '/register',
+            name: 'register',
+            component: () => import('./pages/register.vue')
         }
     ]
 })
