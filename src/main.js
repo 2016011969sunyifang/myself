@@ -11,6 +11,14 @@ import store from './store'
 
 axios.defaults.baseURL = '/api';
 
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+// // require styles
+// import 'swiper/dist/css/swiper.css'
+
+// Vue.use(VueAwesomeSwiper, /* { default global options } */)
+
+
 axios.defaults.timeout = 8000;
 
 axios.interceptors.response.use(function (response) {

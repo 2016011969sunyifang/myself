@@ -26,8 +26,8 @@
             </div>
             <div v-else><a href="javascript:;" @click="login">登录</a></div>
           </div>
-          <div @click="myCart">
-            <span>购物车({{ cartCount }})</span>
+          <div @click="myCart" style="width: 110px">
+            <span class="icon-cart">购物车({{ cartCount }})</span>
           </div>
         </div>
       </div>
@@ -196,7 +196,7 @@ export default {
       span {
         background-color: #ff6600;
         color: #ffffff;
-        width: 100px;
+        width: 100%;
         @include flex(center);
         text-align: center;
         cursor: pointer;
@@ -293,5 +293,17 @@ export default {
       }
     }
   }
+}
+
+.icon-cart {
+  // @include bgImg(16px, 12px, "/imgs/icon-cart-checked.png");
+  background-image: url("/imgs/icon-cart-checked.png");
+  background-position: left center;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  background-size: 21px 15px;
+  height: 100%;
+  // width: 110px;
+  width: 100%;
 }
 </style>
